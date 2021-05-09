@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+        <div class="div-username">
+            <input placeholder="Enter username..."
+                    type="text"
+                    id="username-input" /><br>
+            <button class="btns-join-or" onclick="joinCall()">Join Call</button>
+        </div>
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+                <button onclick="muteVideo()">
+                    <i class="material-icons">videocam_off</i>
+                </button>
+                <button class="endCall" onclick="endCall()">
+                    <i class="material-icons">call_end</i>
+                </button>
+                <button onclick="muteAudio()">
+                    <i class="material-icons">mic_off</i>
+                </button>
+            </div>
+        </div>
+        <script src="./receiver.js"></script>
+    </body>
+
+</html>

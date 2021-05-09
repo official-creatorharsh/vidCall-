@@ -1,0 +1,128 @@
+#video-call-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#local-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14px;
+    border-radius: 11px;
+    width: 100%;
+    height: 100%;
+    max-width: 9%;
+    max-height: 28%;
+    background: #333333;
+}
+
+#remote-video {
+    background: #101010;
+    width: 100%;
+    height: 100%;
+}
+
+.call-action-div {
+    position: absolute;
+    left: 45%;
+    bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+button {
+    cursor: pointer;
+    background-color: #00000073;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    opacity: 80%;
+    height: 40px;
+    transition: .8s;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.endCall {
+    cursor: pointer;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 50px;
+    transition: .8s;
+    opacity: 100%;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.endCall:hover {
+    background: rgb(255, 52, 52);
+}
+
+button:hover {
+    background: #000;
+}
+
+#username-input {
+    background:rgb(248, 248, 248);
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 248, 248);
+    outline: none;
+    transition: .8s;
+}
+
+#username-input:focus {
+    border: 1px solid rgb(76, 0, 255);
+    background-color: #fff;
+}
+
+.div-username {
+    background:#fff;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    outline: none;
+    transition: .8s;
+}
+
+.btns-join-or {
+    background: rgb(76, 0, 255);
+    border-radius: 8px;
+    padding: 5px;
+    max-height: 30px;
+    width: 7%;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 100%;
+    transition: .8s;
+}
+
+.btns-join-or:hover {
+    background-color: rgb(76, 0, 255);
+    opacity: 80%;
+}
